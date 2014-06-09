@@ -15,7 +15,6 @@ Ext.define('MyApp.view.main.Main', {
         type: 'main'
     },
 
-
         layout: {
         type: 'border'
     },
