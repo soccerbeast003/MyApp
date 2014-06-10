@@ -14,7 +14,8 @@ Ext.define('MyApp.view.main.Main', {
         'Ext.grid.plugin.RowEditing',
         'MyApp.view.center.Center',
         'Ext.tab.Panel',
-        'Ext.Img'
+        'Ext.Img',
+        'MyApp.view.east.East'
     ],
 
     xtype: 'app-main',
@@ -29,20 +30,15 @@ Ext.define('MyApp.view.main.Main', {
     },
 
     initComponent: function () {
-        var rowEditing = Ext.create('Ext.grid.plugin.RowEditing', {
-            clicksToMoveEditor: 1,
-            autoCancel: false,
-            pluginId: 'rowEdit'
-        });
         var headerImage = Ext.create('Ext.Img', {
             src: 'http://www.sencha.com/img/20110215-feat-html5.png'
         });
+        this.on('editEvent', function() {
+
+        });
         this.items = [
             {
-                xtype: 'container',
-                region: 'east',
-                width: 300,
-                split: true
+                xtype: 'eastPanel'
 
             },
 
@@ -88,93 +84,7 @@ Ext.define('MyApp.view.main.Main', {
                 xtype: 'app-center'
             },
 
-//            {
-//                region: 'center',
-//                xtype: 'tabpanel',
-//                items: [
-//                    {
-//                        xtype: 'grid',
-//                        reference: 'myGrid',
-//                        tbar: [
-//                            {
-//                                text: 'Add Employee',
-//                                handler: 'onAdd'
-//                            },
-//                            {
-//                                text: 'Remove Employee',
-//                                handler: 'onRemove'
-//                            }
-//                        ],
-//                        title: 'Simpsons Grid',
-//                        height: 200,
-//                        width: 400,
-//                        columns: [
-//                            {
-//                                header: 'Name',
-//                                dataIndex: 'name'
 //
-//                            },
-//
-//                            {
-//                                header: 'Email',
-//                                dataIndex: 'email',
-//                                flex: 1,
-//                                editor: {
-//                                    allowBlank: false,
-//                                    vtype: 'email'
-//                                }
-//                            },
-//                            { header: 'Phone', dataIndex: 'phone' }
-//                        ],
-//                        plugins: [rowEditing],
-//                        store: {
-//                            storeId: 'simpsonsStore',
-//                            fields: ['name', 'email', 'phone'],
-//                            data: {'items': [
-//                                { 'name': 'Lisa', "email": "lisa@simpsons.com", "phone": "555-111-1224"  },
-//                                { 'name': 'Bart', "email": "bart@simpsons.com", "phone": "555-222-1234" },
-//                                { 'name': 'Homer', "email": "homer@simpsons.com", "phone": "555-222-1244"  },
-//                                { 'name': 'Marge', "email": "marge@simpsons.com", "phone": "555-222-1254"  }
-//                            ]},
-//                            proxy: {
-//                                type: 'memory',
-//                                reader: {
-//                                    type: 'json',
-//                                    rootProperty: 'items'
-//                                }
-//                            }
-//                        }
-//
-//                    },
-//                    {
-//                        title: 'Tab 2',
-//                        layout: 'vbox',
-//
-//                        items: [
-//                            {
-//                                xtype: 'panel',
-//                                title: 'whatever',
-//                                width: 100,
-//                                height: 500,
-//                                bodyStyle: {
-//                                    backgroundColor: 'red'
-//
-//                                }
-//
-//                            },
-//                            {
-//                                xtype: 'panel',
-//                                title: 'eer',
-//                                width: 100,
-//                                height: 500
-//                            }
-//                        ]
-//
-//                    }
-//
-//                ]
-//            },
-
             {
                 region: 'north',
 

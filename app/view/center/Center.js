@@ -7,21 +7,23 @@
  */
 Ext.define('MyApp.view.center.Center', {
     extend: 'Ext.container.Container',
+
     requires: [
         'Ext.tree.Panel',
         'Ext.data.TreeStore',
         'Ext.grid.Panel',
-        'Ext.grid.plugin.RowEditing'
+        'Ext.grid.plugin.RowEditing',
+        'MyApp.view.center.grids.SimpsonsGrid'
     ],
 
     xtype: 'app-center',
-//    height: 200,
-//    width: 400,
+
     region: 'center',
 
     controller: 'main',
+
     viewModel: {
-        type: 'main'
+        type: 'center'
     },
 
     layout: {
@@ -29,69 +31,13 @@ Ext.define('MyApp.view.center.Center', {
     },
 
     initComponent: function () {
-        var rowEditing = Ext.create('Ext.grid.plugin.RowEditing', {
-            clicksToMoveEditor: 1,
-            autoCancel: false,
-            pluginId: 'rowEdit'
-        });
-        this.items = [
 
+        this.items = [
             {
                 xtype: 'tabpanel',
                 items: [
                     {
-                        xtype: 'grid',
-                        reference: 'myGrid',
-                        tbar: [
-                            {
-                                text: 'Add Employee',
-                                handler: 'onAdd'
-                            },
-                            {
-                                text: 'Remove Employee',
-                                handler: 'onRemove'
-                            }
-                        ],
-                        title: 'Simpsons Grid',
-                        height: 200,
-                        width: 400,
-                        columns: [
-                            {
-                                header: 'Name',
-                                dataIndex: 'name'
-
-                            },
-
-                            {
-                                header: 'Email',
-                                dataIndex: 'email',
-                                flex: 1,
-                                editor: {
-                                    allowBlank: false,
-                                    vtype: 'email'
-                                }
-                            },
-                            { header: 'Phone', dataIndex: 'phone' }
-                        ],
-                        plugins: [rowEditing],
-                        store: {
-                            storeId: 'simpsonsStore',
-                            fields: ['name', 'email', 'phone'],
-                            data: {'items': [
-                                { 'name': 'Lisa', "email": "lisa@simpsons.com", "phone": "555-111-1224"  },
-                                { 'name': 'Bart', "email": "bart@simpsons.com", "phone": "555-222-1234" },
-                                { 'name': 'Homer', "email": "homer@simpsons.com", "phone": "555-222-1244"  },
-                                { 'name': 'Marge', "email": "marge@simpsons.com", "phone": "555-222-1254"  }
-                            ]},
-                            proxy: {
-                                type: 'memory',
-                                reader: {
-                                    type: 'json',
-                                    rootProperty: 'items'
-                                }
-                            }
-                        }
-
+                        xtype: 'simpsons'
                     },
                     {
                         title: 'Tab 2',
@@ -120,11 +66,10 @@ Ext.define('MyApp.view.center.Center', {
                     }
 
                 ]
-            }
 
-        ];
+            }
+        ]
         this.callParent();
     }
-
-
 });
+

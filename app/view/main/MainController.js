@@ -17,15 +17,6 @@ Ext.define('MyApp.view.main.MainController', {
     onDelete: function () {
         Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
     },
-    onQuit: function () {
-        Ext.Msg.confirm('Quit', 'Are you sure?', 'onConfirm', this);
-    },
-    onAdd: function () {
-        var myGrid = this.lookupReference('myGrid'),
-            rowEditor = myGrid.getPlugin('rowEdit');
-
-        Ext.Msg.confirm('Yes', 'It Worked!', 'onConfirm', this);
-        rowEditor.cancelEdit();
 
 //        // Create a model instance
 //        var r = Ext.create('Employee', {
@@ -37,8 +28,6 @@ Ext.define('MyApp.view.main.MainController', {
 ////        });
 //
 //        myGrid.store.insert(0, r);
-        rowEditor.startEdit(0, 0);
-    },
 
     onConfirm: function (choice) {
         if (choice === 'yes') {
