@@ -2314,6 +2314,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.Application": [],
   "MyApp.controller.Main": [],
   "MyApp.controller.Root": [],
+  "MyApp.view.center.Center": [],
   "MyApp.view.main.Main": [],
   "MyApp.view.main.MainController": [],
   "MyApp.view.main.MainModel": []
@@ -3647,6 +3648,9 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.Application": [],
   "MyApp.controller.Main": [],
   "MyApp.controller.Root": [],
+  "MyApp.view.center.Center": [
+    "widget.app-center"
+  ],
   "MyApp.view.main.Main": [
     "widget.app-main"
   ],

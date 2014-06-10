@@ -20,6 +20,25 @@ Ext.define('MyApp.view.main.MainController', {
     onQuit: function () {
         Ext.Msg.confirm('Quit', 'Are you sure?', 'onConfirm', this);
     },
+    onAdd: function () {
+        var myGrid = this.lookupReference('myGrid'),
+            rowEditor = myGrid.getPlugin('rowEdit');
+
+        Ext.Msg.confirm('Yes', 'It Worked!', 'onConfirm', this);
+        rowEditor.cancelEdit();
+
+//        // Create a model instance
+//        var r = Ext.create('Employee', {
+//            name: 'New Guy',
+//            email: 'new@sencha-test.com',
+//            start: Ext.Date.clearTime(new Date()),
+//            salary: 50000,
+//            active: true
+////        });
+//
+//        myGrid.store.insert(0, r);
+        rowEditor.startEdit(0, 0);
+    },
 
     onConfirm: function (choice) {
         if (choice === 'yes') {
