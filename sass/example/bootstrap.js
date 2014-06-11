@@ -2315,8 +2315,10 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.controller.Main": [],
   "MyApp.controller.Root": [],
   "MyApp.view.center.Center": [],
+  "MyApp.view.center.CenterController": [],
   "MyApp.view.center.grids.SimpsonsGrid": [],
   "MyApp.view.east.East": [],
+  "MyApp.view.east.EastController": [],
   "MyApp.view.main.Main": [],
   "MyApp.view.main.MainController": [],
   "MyApp.view.main.MainModel": []
@@ -3653,17 +3655,23 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.center.Center": [
     "widget.app-center"
   ],
+  "MyApp.view.center.CenterController": [
+    "controller.center"
+  ],
   "MyApp.view.center.grids.SimpsonsGrid": [
     "widget.simpsons"
   ],
   "MyApp.view.east.East": [
     "widget.eastPanel"
   ],
+  "MyApp.view.east.EastController": [
+    "controller.east"
+  ],
   "MyApp.view.main.Main": [
     "widget.app-main"
   ],
   "MyApp.view.main.MainController": [
-    "controller.center"
+    "controller.main"
   ],
   "MyApp.view.main.MainModel": [
     "viewmodel.main"

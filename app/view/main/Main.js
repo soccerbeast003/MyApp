@@ -37,10 +37,10 @@ Ext.define('MyApp.view.main.Main', {
 
         });
         this.items = [
-            {
-                xtype: 'eastPanel'
-
-            },
+//            {
+//                xtype: 'eastpanel'
+//
+//            },
 
 
             {

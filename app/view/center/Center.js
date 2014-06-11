@@ -20,11 +20,11 @@ Ext.define('MyApp.view.center.Center', {
 
     region: 'center',
 
-    controller: 'main',
+    controller: 'center',
 
-    viewModel: {
-        type: 'center'
-    },
+//    viewModel: {
+//        type: 'center'
+//    },
 
     layout: {
         type: 'fit'
@@ -37,6 +37,7 @@ Ext.define('MyApp.view.center.Center', {
                 xtype: 'tabpanel',
                 items: [
                     {
+                        title: 'Tab 1',
                         xtype: 'simpsons'
                     },
                     {
