@@ -13,10 +13,33 @@ Ext.define('MyApp.view.east.EastController', {
     ],
 
     alias: 'controller.east',
-    listeners: {
-        editEvent: function() {
-//            eastPanel.insert(0, {xtype: 'simpsons'});
+
+    init: function () {
+        this.listen({
+            controller: {
+                'center': {
+                    editEvent: this.addGrid
+                }
+            }
+//            component: {
+//                'simpsons': {
+//                    editEvent: me.addGrid
+//                }
+//            }
+        });
+
+    },
+
+    addGrid: function () {
+//        var eastPanel = this.lookupReference('eastpanel');
+        var eastPanel = this.getView(),
+            simpsonsGrid = this.lookupReference('simpsonGrid');
+        if(simpsonsGrid){
+            eastPanel.remove(simpsonsGrid);
         }
+        eastPanel.insert(0, {
+            xtype: 'simpsons',
+        });
     }
 
 });

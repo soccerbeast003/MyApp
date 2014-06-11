@@ -19,9 +19,11 @@ Ext.define('MyApp.view.east.East', {
 
     ],
 
-    alias: 'widget.eastpanel',
+    xtype: 'app-east',
     controller: 'east',
-//    viewModel: {
+    region: 'east',
+    split: true,
+    //    viewModel: {
 //        type: 'east'
 //    },
 
@@ -31,16 +33,16 @@ Ext.define('MyApp.view.east.East', {
 
     initComponent: function () {
 
-        this.items = [
-            {
-                xtype: 'container',
-                region: 'east',
-                width: 300,
-                height: 200,
-                split: true
-
-            }
-        ];
+//        this.items = [
+//            {
+//                xtype: 'container',
+//                region: 'east',
+//                width: 300,
+//                height: 200,
+//                split: true
+//
+//            }
+//        ];
         this.callParent();
     }
 });

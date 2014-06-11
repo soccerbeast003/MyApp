@@ -30,17 +30,11 @@ Ext.define('MyApp.view.main.Main', {
     },
 
     initComponent: function () {
-        var headerImage = Ext.create('Ext.Img', {
-            src: 'http://www.sencha.com/img/20110215-feat-html5.png'
-        });
-        this.on('editEvent', function() {
-
-        });
         this.items = [
-//            {
-//                xtype: 'eastpanel'
-//
-//            },
+            {
+                xtype: 'app-east'
+
+            },
 
 
             {
@@ -84,7 +78,7 @@ Ext.define('MyApp.view.main.Main', {
                 xtype: 'app-center'
             },
 
-//
+
             {
                 region: 'north',
 
