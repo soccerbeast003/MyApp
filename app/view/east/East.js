@@ -15,7 +15,7 @@ Ext.define('MyApp.view.east.East', {
         'MyApp.view.center.Center',
         'Ext.tab.Panel',
         'Ext.Img',
-        'MyApp.view.center.grids.SimpsonsGrid'
+        'MyApp.grid.SimpsonsGrid'
 
     ],
 

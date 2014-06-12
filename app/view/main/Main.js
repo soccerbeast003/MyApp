@@ -35,47 +35,11 @@ Ext.define('MyApp.view.main.Main', {
                 xtype: 'app-east'
 
             },
-
-
-            {
-                xtype: 'treepanel',
-                region: 'west',
-                title: 'Simple Tree',
-                store: Ext.create('Ext.data.TreeStore', {
-
-                    root: {
-                        expanded: true,
-                        children: [
-                            { text: "detention", leaf: true },
-                            { text: "homework", expanded: true, children: [
-                                { text: "book report", leaf: true },
-                                { text: "algebra", leaf: true}
-                            ] },
-                            { text: "buy lottery tickets", leaf: true }
-                        ]
-                    }
-
-                }),
-
-
-                width: 250,
-                split: true,
-
-                tbar: [
-                    {
-                        text: 'Delete',
-                        handler: 'onDelete'
-
-                    } ,
-                    {
-                        text: 'Quit',
-                        handler: 'onQuit'
-
-                    }
-                ]
-            },
             {
                 xtype: 'app-center'
+            },
+            {
+                xtype: 'sidebar'
             },
 
 

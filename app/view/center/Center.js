@@ -13,7 +13,7 @@ Ext.define('MyApp.view.center.Center', {
         'Ext.data.TreeStore',
         'Ext.grid.Panel',
         'Ext.grid.plugin.RowEditing',
-        'MyApp.view.center.grids.SimpsonsGrid'
+        'MyApp.grid.SimpsonsGrid'
     ],
 
     xtype: 'app-center',
@@ -37,11 +37,11 @@ Ext.define('MyApp.view.center.Center', {
                 xtype: 'tabpanel',
                 items: [
                     {
-                        title: 'Tab 1',
+                        title: 'Suppliers',
                         xtype: 'simpsons'
                     },
                     {
-                        title: 'Tab 2',
+                        title: 'Product Types',
                         layout: 'vbox',
 
                         items: [

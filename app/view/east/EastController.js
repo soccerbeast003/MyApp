@@ -31,14 +31,13 @@ Ext.define('MyApp.view.east.EastController', {
     },
 
     addGrid: function () {
-//        var eastPanel = this.lookupReference('eastpanel');
         var eastPanel = this.getView(),
-            simpsonsGrid = this.lookupReference('simpsonGrid');
-        if(simpsonsGrid){
-            eastPanel.remove(simpsonsGrid);
+            DetailsGrid = this.lookupReference('detailsGrid');
+        if(DetailsGrid){
+            eastPanel.remove(DetailsGrid);
         }
         eastPanel.insert(0, {
-            xtype: 'simpsons',
+            xtype: 'details'
         });
     }
 
