@@ -2315,7 +2315,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.controller.Main": [],
   "MyApp.controller.Root": [],
   "MyApp.grid.DetailsGrid": [],
-  "MyApp.grid.SidebarGrid": [],
   "MyApp.grid.SimpsonsGrid": [],
   "MyApp.store.DetailsStore": [],
   "MyApp.store.SidebarStore": [],
@@ -3661,9 +3660,6 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.grid.DetailsGrid": [
     "widget.details"
   ],
-  "MyApp.grid.SidebarGrid": [
-    "widget.sidebar"
-  ],
   "MyApp.grid.SimpsonsGrid": [
     "widget.simpsons"
   ],
@@ -3692,8 +3688,7 @@ Ext.ClassManager.addNameAliasMappings({
     "viewmodel.main"
   ],
   "MyApp.view.sidebar.Sidebar": [
-    "sidebar",
-    "widget.sidebar"
+    "widget.sidebarMain"
   ]
 });
 Ext.setVersion("ext", "5.0.0.970");

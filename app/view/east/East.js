@@ -6,16 +6,8 @@
  * TODO - Replace this content of this view to suite the needs of your application.
  */
 Ext.define('MyApp.view.east.East', {
-    extend: 'Ext.container.Container',
+    extend: 'Ext.panel.Panel',
     requires: [
-        'Ext.tree.Panel',
-        'Ext.data.TreeStore',
-        'Ext.grid.Panel',
-        'Ext.grid.plugin.RowEditing',
-        'MyApp.view.center.Center',
-        'Ext.tab.Panel',
-        'Ext.Img',
-        'MyApp.grid.SimpsonsGrid'
 
     ],
 
@@ -23,6 +15,8 @@ Ext.define('MyApp.view.east.East', {
     controller: 'east',
     region: 'east',
     split: true,
+    collapsible: true,
+    title: 'Details',
     //    viewModel: {
 //        type: 'east'
 //    },

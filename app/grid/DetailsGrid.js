@@ -19,7 +19,6 @@ Ext.define('MyApp.grid.DetailsGrid', {
 //        type: 'center'
 //    },
 
-    title: 'Details',
     height: 200,
     width: 400,
 

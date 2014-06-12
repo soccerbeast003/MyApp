@@ -6,37 +6,47 @@
  * TODO - Replace this content of this view to suite the needs of your application.
  */
 Ext.define('MyApp.view.sidebar.Sidebar', {
-    extend: 'Ext.container.Container',
+    extend: 'Ext.grid.Panel',
 
     requires: [
-        'Ext.grid.Panel',
-        'MyApp.grid.SidebarGrid'
+        'MyApp.store.SidebarStore'
     ],
 
-    alias: 'sidebarMain',
+    alias: 'widget.sidebarMain',
+
+    selType: 'cellmodel',
 
     region: 'west',
 
-    controller: 'center',
+    title: 'Navigation',
+    width: 125,
+    disableSelection: true,
+    hideHeaders: true,
+    split: true,
+//
+//    controller: 'center',
 
 //    viewModel: {
 //        type: 'center'
 //    },
+//
+//    layout: {
+//        type: 'fit'
+//    },
 
-    layout: {
-        type: 'fit'
-    },
-
-    xtype: 'sidebarGrid',
 
     initComponent: function () {
-        this.items = [
+        this.columns = [
             {
-                xtype: 'sidebar',
-                split: true,
-                width: 125
+                dataIndex: 'page',
+                flex: 1
+
             }
+
         ];
+        this.store = Ext.create('MyApp.store.SidebarStore');
+
+
 
 
 

@@ -39,7 +39,7 @@ Ext.define('MyApp.view.main.Main', {
                 xtype: 'app-center'
             },
             {
-                xtype: 'sidebar'
+                xtype: 'sidebarMain'
             },
 
 

@@ -13,7 +13,7 @@ Ext.define('MyApp.view.east.EastController', {
     ],
 
     alias: 'controller.east',
-
+    hidden: true,
     init: function () {
         this.listen({
             controller: {
@@ -33,6 +33,7 @@ Ext.define('MyApp.view.east.EastController', {
     addGrid: function () {
         var eastPanel = this.getView(),
             DetailsGrid = this.lookupReference('detailsGrid');
+
         if(DetailsGrid){
             eastPanel.remove(DetailsGrid);
         }
