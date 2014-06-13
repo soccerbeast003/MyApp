@@ -9,11 +9,9 @@ Ext.define('MyApp.view.center.Center', {
     extend: 'Ext.container.Container',
 
     requires: [
-        'Ext.tree.Panel',
-        'Ext.data.TreeStore',
         'Ext.grid.Panel',
         'Ext.grid.plugin.RowEditing',
-        'MyApp.view.grid.Suppliers'
+        'MyApp.view.suppliers.Suppliers'
     ],
 
     xtype: 'app-center',
@@ -33,18 +31,7 @@ Ext.define('MyApp.view.center.Center', {
     initComponent: function () {
 
         this.items = [
-            {
-                xtype: 'tabpanel',
-                items: [
-                    {
-                        title: 'Suppliers',
-                        xtype: 'suppliers'
-                    }
 
-
-                ]
-
-            }
         ]
         this.callParent();
     }

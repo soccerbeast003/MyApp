@@ -29,20 +29,6 @@ Ext.define('MyApp.view.grid.Details', {
             autoCancel: false,
             pluginId: 'rowEdit'
         });
-        this.tbar = [
-            {
-                text: 'Add Employee',
-                handler: 'onAdd'
-            },
-            {
-                text: 'Remove Employee',
-                handler: 'onRemove'
-            },
-            {
-                text: 'Edit Employee',
-                handler: 'onEdit'
-            }
-        ];
 
         this.columns = [
             {

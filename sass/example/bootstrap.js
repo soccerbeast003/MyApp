@@ -1275,7 +1275,8 @@ Ext.Loader.addClassPathMappings({
   "Ext.util.StoreHolder": "../../ext/src/util/StoreHolder.js",
   "Ext.ux.desktop.TrayClock": "../../ext/src/ux/desktop/TaskBar.js",
   "ExtThemeNeptune": "../../ext/packages/ext-theme-neptune/overrides",
-  "MyApp": "../../app"
+  "MyApp": "../../app",
+  "MyApp.view.sidebar.SidebarController": "../../app/view/suppliers/SuppliersController.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractManager": [],
@@ -2315,18 +2316,17 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.controller.Main": [],
   "MyApp.controller.Root": [],
   "MyApp.store.Details": [],
-  "MyApp.store.Sidebar": [],
   "MyApp.store.Suppliers": [],
   "MyApp.view.center.Center": [],
-  "MyApp.view.center.CenterController": [],
   "MyApp.view.east.East": [],
   "MyApp.view.east.EastController": [],
   "MyApp.view.grid.Details": [],
-  "MyApp.view.grid.Suppliers": [],
   "MyApp.view.main.Main": [],
   "MyApp.view.main.MainController": [],
   "MyApp.view.main.MainModel": [],
-  "MyApp.view.sidebar.Sidebar": []
+  "MyApp.view.sidebar.Sidebar": [],
+  "MyApp.view.sidebar.SidebarController": [],
+  "MyApp.view.suppliers.Suppliers": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractManager": [],
@@ -3658,13 +3658,9 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.controller.Main": [],
   "MyApp.controller.Root": [],
   "MyApp.store.Details": [],
-  "MyApp.store.Sidebar": [],
   "MyApp.store.Suppliers": [],
   "MyApp.view.center.Center": [
     "widget.app-center"
-  ],
-  "MyApp.view.center.CenterController": [
-    "controller.center"
   ],
   "MyApp.view.east.East": [
     "widget.app-east"
@@ -3674,9 +3670,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MyApp.view.grid.Details": [
     "widget.details"
-  ],
-  "MyApp.view.grid.Suppliers": [
-    "widget.suppliers"
   ],
   "MyApp.view.main.Main": [
     "widget.app-main"
@@ -3688,7 +3681,13 @@ Ext.ClassManager.addNameAliasMappings({
     "viewmodel.main"
   ],
   "MyApp.view.sidebar.Sidebar": [
-    "widget.sidebarMain"
+    "widget.sidebar"
+  ],
+  "MyApp.view.sidebar.SidebarController": [
+    "controller.sidebar"
+  ],
+  "MyApp.view.suppliers.Suppliers": [
+    "widget.suppliers"
   ]
 });
 Ext.setVersion("ext", "5.0.0.970");

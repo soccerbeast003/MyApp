@@ -5,7 +5,7 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('MyApp.view.grid.Suppliers', {
+Ext.define('MyApp.view.suppliers.Suppliers', {
     extend: 'Ext.grid.Panel',
     requires: [
         'Ext.grid.plugin.RowEditing',
@@ -15,7 +15,7 @@ Ext.define('MyApp.view.grid.Suppliers', {
     alias: 'widget.suppliers',
     reference: 'suppliersGrid',
 
-//    controller: 'main',
+    controller: 'suppliers',
 //    viewModel: {
 //        type: 'center'
 //    },
@@ -63,7 +63,7 @@ Ext.define('MyApp.view.grid.Suppliers', {
             {
                 header: 'Email',
                 dataIndex: 'email',
-                flex: 1,
+                width: 300,
                 editor: {
                     allowBlank: false,
                     vtype: 'email'

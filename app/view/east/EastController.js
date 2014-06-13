@@ -17,7 +17,7 @@ Ext.define('MyApp.view.east.EastController', {
     init: function () {
         this.listen({
             controller: {
-                'center': {
+                'suppliers': {
                     editEvent: this.addGrid
                 }
             }
