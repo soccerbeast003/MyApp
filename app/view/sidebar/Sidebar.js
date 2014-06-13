@@ -9,7 +9,7 @@ Ext.define('MyApp.view.sidebar.Sidebar', {
     extend: 'Ext.grid.Panel',
 
     requires: [
-        'MyApp.store.SidebarStore'
+        'MyApp.store.Sidebar'
     ],
 
     alias: 'widget.sidebarMain',
@@ -44,7 +44,7 @@ Ext.define('MyApp.view.sidebar.Sidebar', {
             }
 
         ];
-        this.store = Ext.create('MyApp.store.SidebarStore');
+        this.store = Ext.create('MyApp.store.Sidebar');
 
 
 

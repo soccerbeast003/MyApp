@@ -5,20 +5,22 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('MyApp.grid.DetailsGrid', {
+Ext.define('MyApp.view.grid.Suppliers', {
     extend: 'Ext.grid.Panel',
     requires: [
         'Ext.grid.plugin.RowEditing',
-        'MyApp.store.DetailsStore'
+        'MyApp.store.Suppliers'
     ],
 
-    alias: 'widget.details',
-    reference: 'detailsGrid',
+    alias: 'widget.suppliers',
+    reference: 'suppliersGrid',
+
 //    controller: 'main',
 //    viewModel: {
 //        type: 'center'
 //    },
 
+    title: 'Suppliers Grid',
     height: 200,
     width: 400,
 
@@ -41,6 +43,13 @@ Ext.define('MyApp.grid.DetailsGrid', {
             {
                 text: 'Edit Employee',
                 handler: 'onEdit'
+            },
+            '->',
+            {
+                xtype: 'textfield',
+                name:  'search',
+                fieldLabel: 'Search:'
+
             }
         ];
 
@@ -63,7 +72,7 @@ Ext.define('MyApp.grid.DetailsGrid', {
             { header: 'Phone', dataIndex: 'phone' }
         ];
         this.plugins = [rowEditing];
-        this.store = Ext.create('MyApp.store.DetailsStore');
+        this.store = Ext.create('MyApp.store.Suppliers');
         this.callParent();
     }
 });
