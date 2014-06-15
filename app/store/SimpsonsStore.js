@@ -5,10 +5,10 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('MyApp.store.Suppliers', {
+Ext.define('MyApp.store.SimpsonsStore', {
     extend: 'Ext.data.Store',
 
-    storeId: 'suppliersStore',
+    storeId: 'simpsonsStore',
 
     fields: ['name', 'email', 'phone'],
     data: {

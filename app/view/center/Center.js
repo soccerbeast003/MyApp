@@ -9,9 +9,11 @@ Ext.define('MyApp.view.center.Center', {
     extend: 'Ext.container.Container',
 
     requires: [
+        'Ext.tree.Panel',
+        'Ext.data.TreeStore',
         'Ext.grid.Panel',
         'Ext.grid.plugin.RowEditing',
-        'MyApp.view.suppliers.Suppliers'
+        'MyApp.grid.SimpsonsGrid'
     ],
 
     xtype: 'app-center',
@@ -31,7 +33,42 @@ Ext.define('MyApp.view.center.Center', {
     initComponent: function () {
 
         this.items = [
+            {
+                xtype: 'tabpanel',
+                items: [
+                    {
+                        title: 'Suppliers',
+                        xtype: 'simpsons'
+                    },
+                    {
+                        title: 'Product Types',
+                        layout: 'vbox',
 
+                        items: [
+                            {
+                                xtype: 'panel',
+                                title: 'whatever',
+                                width: 100,
+                                height: 500,
+                                bodyStyle: {
+                                    backgroundColor: 'red'
+
+                                }
+
+                            },
+                            {
+                                xtype: 'panel',
+                                title: 'eer',
+                                width: 100,
+                                height: 500
+                            }
+                        ]
+
+                    }
+
+                ]
+
+            }
         ]
         this.callParent();
     }

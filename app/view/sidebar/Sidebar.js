@@ -6,42 +6,50 @@
  * TODO - Replace this content of this view to suite the needs of your application.
  */
 Ext.define('MyApp.view.sidebar.Sidebar', {
-    extend: 'Ext.tab.Panel',
+    extend: 'Ext.grid.Panel',
 
-    alias: 'widget.sidebar',
+    requires: [
+        'MyApp.store.SidebarStore'
+    ],
 
-//    ui: 'navigation',
+    alias: 'widget.sidebarMain',
 
-    region: 'center',
+    selType: 'cellmodel',
 
+    region: 'west',
+
+    title: 'Navigation',
+    width: 125,
+    disableSelection: true,
+    hideHeaders: true,
     split: true,
+//
+//    controller: 'center',
 
-    height: 400,
+//    viewModel: {
+//        type: 'center'
+//    },
+//
+//    layout: {
+//        type: 'fit'
+//    },
 
-    width: 1200,
 
-    tabPosition: 'left',
+    initComponent: function () {
+        this.columns = [
+            {
+                dataIndex: 'page',
+                flex: 1
 
-    tabRotation: 0,
+            }
 
-    defaults: {
-        textAlign: 'left',
-        bodyPadding: 15
-    },
+        ];
+        this.store = Ext.create('MyApp.store.SidebarStore');
 
-    items: [
-        {
-            title: 'Home'
-        },
-        {
-            title: 'Suppliers',
-            xtype: 'suppliers'
-        },
-        {
-            title: 'Product Types'
-        },
-        {
-            title: 'About'
-        }
-    ]
+
+
+
+
+        this.callParent();
+    }
 });

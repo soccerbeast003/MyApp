@@ -711,18 +711,19 @@ $include-extthemeneptune-toolbar-toolbar: true;
 $include-myapp-application: true;
 $include-myapp-controller-main: true;
 $include-myapp-controller-root: true;
-$include-myapp-store-details: true;
-$include-myapp-store-suppliers: true;
+$include-myapp-grid-detailsgrid: true;
+$include-myapp-grid-simpsonsgrid: true;
+$include-myapp-store-detailsstore: true;
+$include-myapp-store-sidebarstore: true;
+$include-myapp-store-simpsonsstore: true;
 $include-myapp-view-center-center: true;
+$include-myapp-view-center-centercontroller: true;
 $include-myapp-view-east-east: true;
 $include-myapp-view-east-eastcontroller: true;
-$include-myapp-view-grid-details: true;
 $include-myapp-view-main-main: true;
 $include-myapp-view-main-maincontroller: true;
 $include-myapp-view-main-mainmodel: true;
 $include-myapp-view-sidebar-sidebar: true;
-$include-myapp-view-sidebar-sidebarcontroller: true;
-$include-myapp-view-suppliers-suppliers: true;
 /* including package ext-theme-base */
 @import '../../../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */

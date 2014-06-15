@@ -15,8 +15,7 @@ Ext.define('MyApp.view.main.Main', {
         'MyApp.view.center.Center',
         'Ext.tab.Panel',
         'Ext.Img',
-        'MyApp.view.east.East',
-        'MyApp.view.sidebar.Sidebar'
+        'MyApp.view.east.East'
     ],
 
     xtype: 'app-main',
@@ -36,11 +35,11 @@ Ext.define('MyApp.view.main.Main', {
                 xtype: 'app-east'
 
             },
-//            {
-//                xtype: 'app-center'
-//            },
             {
-                xtype: 'sidebar'
+                xtype: 'app-center'
+            },
+            {
+                xtype: 'sidebarMain'
             },
 
 

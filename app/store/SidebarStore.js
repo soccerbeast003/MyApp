@@ -5,18 +5,18 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('MyApp.store.Details', {
+Ext.define('MyApp.store.SidebarStore', {
     extend: 'Ext.data.Store',
 
-    storeId: 'detailsStore',
+    storeId: 'sidebarStore',
 
-    fields: ['name', 'email', 'phone'],
+    fields: ['page'],
     data: {
         'items': [
-            { 'name': 'Lisa', "email": "lisa@simpsons.com", "phone": "555-111-1224"  },
-            { 'name': 'Bart', "email": "bart@simpsons.com", "phone": "555-222-1234" },
-            { 'name': 'Homer', "email": "homer@simpsons.com", "phone": "555-222-1244"  },
-            { 'name': 'Marge', "email": "marge@simpsons.com", "phone": "555-222-1254"  }
+            { 'page': 'Main'},
+            { 'page': 'Suppliers'},
+            { 'page': 'Product Types'},
+            { 'page': 'About'}
         ]
     },
     proxy: {
