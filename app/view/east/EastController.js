@@ -17,7 +17,7 @@ Ext.define('MyApp.view.east.EastController', {
     init: function () {
         this.listen({
             controller: {
-                'center': {
+                'suppliers': {
                     editEvent: this.addGrid
                 }
             }
@@ -33,12 +33,13 @@ Ext.define('MyApp.view.east.EastController', {
     addGrid: function () {
         var eastPanel = this.getView(),
             DetailsGrid = this.lookupReference('detailsGrid');
-
+        eastPanel.show(true);
         if(DetailsGrid){
             eastPanel.remove(DetailsGrid);
         }
         eastPanel.insert(0, {
-            xtype: 'details'
+            xtype: 'details',
+            visible: true
         });
     }
 

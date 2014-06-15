@@ -12,7 +12,7 @@ Ext.define('MyApp.view.sidebar.SidebarController', {
         'Ext.MessageBox'
     ],
 
-    alias: 'controller.sidebar',
+    alias: 'controller.suppliers',
     onQuit: function () {
         Ext.Msg.confirm('Quit', 'Are you sure?', 'onConfirm', this);
     },

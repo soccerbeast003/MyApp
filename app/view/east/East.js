@@ -15,7 +15,7 @@ Ext.define('MyApp.view.east.East', {
     controller: 'east',
     region: 'east',
     split: true,
-    collapsible: true,
+    closable: true,
     title: 'Details',
     //    viewModel: {
 //        type: 'east'
