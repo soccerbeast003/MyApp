@@ -2318,8 +2318,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.store.Details": [],
   "MyApp.store.SimpsonsStore": [],
   "MyApp.store.Suppliers": [],
-  "MyApp.view.east.East": [],
-  "MyApp.view.east.EastController": [],
   "MyApp.view.grid.Details": [],
   "MyApp.view.grid.SimpsonsGrid": [],
   "MyApp.view.home.Home": [],
@@ -3662,12 +3660,6 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.store.Details": [],
   "MyApp.store.SimpsonsStore": [],
   "MyApp.store.Suppliers": [],
-  "MyApp.view.east.East": [
-    "widget.app-east"
-  ],
-  "MyApp.view.east.EastController": [
-    "controller.east"
-  ],
   "MyApp.view.grid.Details": [
     "widget.details"
   ],

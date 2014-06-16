@@ -714,8 +714,6 @@ $include-myapp-controller-root: true;
 $include-myapp-store-details: true;
 $include-myapp-store-simpsonsstore: true;
 $include-myapp-store-suppliers: true;
-$include-myapp-view-east-east: true;
-$include-myapp-view-east-eastcontroller: true;
 $include-myapp-view-grid-details: true;
 $include-myapp-view-grid-simpsonsgrid: true;
 $include-myapp-view-home-home: true;

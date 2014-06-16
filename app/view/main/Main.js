@@ -14,7 +14,6 @@ Ext.define('MyApp.view.main.Main', {
         'Ext.grid.plugin.RowEditing',
         'Ext.tab.Panel',
         'Ext.Img',
-        'MyApp.view.east.East',
         'MyApp.view.sidebar.Sidebar'
     ],
 
@@ -31,10 +30,6 @@ Ext.define('MyApp.view.main.Main', {
 
     initComponent: function () {
         this.items = [
-            {
-                xtype: 'app-east'
-
-            },
             {
                 region: 'north',
 
