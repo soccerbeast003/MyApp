@@ -12,14 +12,13 @@ Ext.define('MyApp.view.main.Main', {
         'Ext.data.TreeStore',
         'Ext.grid.Panel',
         'Ext.grid.plugin.RowEditing',
-        'MyApp.view.center.Center',
         'Ext.tab.Panel',
         'Ext.Img',
         'MyApp.view.east.East',
         'MyApp.view.sidebar.Sidebar'
     ],
 
-    xtype: 'app-main',
+    alias: 'widget.main',
 
     controller: 'main',
     viewModel: {
@@ -36,14 +35,6 @@ Ext.define('MyApp.view.main.Main', {
                 xtype: 'app-east'
 
             },
-//            {
-//                xtype: 'app-center'
-//            },
-            {
-                xtype: 'sidebar'
-            },
-
-
             {
                 region: 'north',
 

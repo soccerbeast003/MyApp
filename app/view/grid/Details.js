@@ -38,15 +38,15 @@ Ext.define('MyApp.view.grid.Details', {
             },
 
             {
-                header: 'Email',
-                dataIndex: 'email',
+                header: 'Product Id',
+                dataIndex: 'productid',
                 flex: 1,
                 editor: {
                     allowBlank: false,
                     vtype: 'email'
                 }
             },
-            { header: 'Phone', dataIndex: 'phone' }
+            { header: 'Description', dataIndex: 'description' }
         ];
         this.plugins = [rowEditing];
         this.store = Ext.create('MyApp.store.Details');

@@ -10,13 +10,13 @@ Ext.define('MyApp.store.Details', {
 
     storeId: 'detailsStore',
 
-    fields: ['name', 'email', 'phone'],
+    fields: ['name', 'productid', 'description'],
     data: {
         'items': [
-            { 'name': 'Lisa', "email": "lisa@simpsons.com", "phone": "555-111-1224"  },
-            { 'name': 'Bart', "email": "bart@simpsons.com", "phone": "555-222-1234" },
-            { 'name': 'Homer', "email": "homer@simpsons.com", "phone": "555-222-1244"  },
-            { 'name': 'Marge', "email": "marge@simpsons.com", "phone": "555-222-1254"  }
+            { 'name': 'Lisa', "productid": "234d345", "description": "cat"  },
+            { 'name': 'Bart', "productid": "th546dssdf", "description": "dog" },
+            { 'name': 'Homer', "productid": "sadfg43563", "description": "ferret"  },
+            { 'name': 'Marge', "productid": "m35cc64e3j", "description": "monkey"  }
         ]
     },
     proxy: {

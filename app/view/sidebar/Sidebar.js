@@ -10,6 +10,8 @@ Ext.define('MyApp.view.sidebar.Sidebar', {
 
     alias: 'widget.sidebar',
 
+    controller: 'sidebar',
+
 //    ui: 'navigation',
 
     region: 'center',
@@ -31,7 +33,8 @@ Ext.define('MyApp.view.sidebar.Sidebar', {
 
     items: [
         {
-            title: 'Home'
+            title: 'Home',
+            xtype: 'home'
         },
         {
             title: 'Suppliers',

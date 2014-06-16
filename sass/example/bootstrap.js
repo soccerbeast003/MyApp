@@ -2315,17 +2315,14 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.Application": [],
   "MyApp.controller.Main": [],
   "MyApp.controller.Root": [],
-  "MyApp.grid.DetailsGrid": [],
-  "MyApp.grid.SimpsonsGrid": [],
   "MyApp.store.Details": [],
-  "MyApp.store.DetailsStore": [],
-  "MyApp.store.SidebarStore": [],
   "MyApp.store.SimpsonsStore": [],
   "MyApp.store.Suppliers": [],
-  "MyApp.view.center.Center": [],
   "MyApp.view.east.East": [],
   "MyApp.view.east.EastController": [],
   "MyApp.view.grid.Details": [],
+  "MyApp.view.grid.SimpsonsGrid": [],
+  "MyApp.view.home.Home": [],
   "MyApp.view.main.Main": [],
   "MyApp.view.main.MainController": [],
   "MyApp.view.main.MainModel": [],
@@ -3662,20 +3659,9 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.Application": [],
   "MyApp.controller.Main": [],
   "MyApp.controller.Root": [],
-  "MyApp.grid.DetailsGrid": [
-    "widget.details"
-  ],
-  "MyApp.grid.SimpsonsGrid": [
-    "widget.simpsons"
-  ],
   "MyApp.store.Details": [],
-  "MyApp.store.DetailsStore": [],
-  "MyApp.store.SidebarStore": [],
   "MyApp.store.SimpsonsStore": [],
   "MyApp.store.Suppliers": [],
-  "MyApp.view.center.Center": [
-    "widget.app-center"
-  ],
   "MyApp.view.east.East": [
     "widget.app-east"
   ],
@@ -3685,8 +3671,14 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.grid.Details": [
     "widget.details"
   ],
+  "MyApp.view.grid.SimpsonsGrid": [
+    "widget.simpsons"
+  ],
+  "MyApp.view.home.Home": [
+    "widget.home"
+  ],
   "MyApp.view.main.Main": [
-    "widget.app-main"
+    "widget.main"
   ],
   "MyApp.view.main.MainController": [
     "controller.main"

@@ -5,20 +5,22 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('MyApp.grid.DetailsGrid', {
+Ext.define('MyApp.view.grid.SimpsonsGrid', {
     extend: 'Ext.grid.Panel',
     requires: [
         'Ext.grid.plugin.RowEditing',
-        'MyApp.store.DetailsStore'
+        'MyApp.store.SimpsonsStore'
     ],
 
-    alias: 'widget.details',
-    reference: 'detailsGrid',
+    alias: 'widget.simpsons',
+    reference: 'simpsonsGrid',
+
 //    controller: 'main',
 //    viewModel: {
 //        type: 'center'
 //    },
 
+    title: 'Simpsons Grid',
     height: 200,
     width: 400,
 
@@ -63,7 +65,7 @@ Ext.define('MyApp.grid.DetailsGrid', {
             { header: 'Phone', dataIndex: 'phone' }
         ];
         this.plugins = [rowEditing];
-        this.store = Ext.create('MyApp.store.DetailsStore');
+        this.store = Ext.create('MyApp.store.SimpsonsStore');
         this.callParent();
     }
 });
