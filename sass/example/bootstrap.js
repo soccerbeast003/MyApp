@@ -1275,8 +1275,7 @@ Ext.Loader.addClassPathMappings({
   "Ext.util.StoreHolder": "../../ext/src/util/StoreHolder.js",
   "Ext.ux.desktop.TrayClock": "../../ext/src/ux/desktop/TaskBar.js",
   "ExtThemeNeptune": "../../ext/packages/ext-theme-neptune/overrides",
-  "MyApp": "../../app",
-  "MyApp.view.sidebar.SidebarController": "../../app/view/suppliers/SuppliersController.js"
+  "MyApp": "../../app"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractManager": [],
@@ -2326,7 +2325,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.view.main.MainModel": [],
   "MyApp.view.sidebar.Sidebar": [],
   "MyApp.view.sidebar.SidebarController": [],
-  "MyApp.view.suppliers.Suppliers": []
+  "MyApp.view.suppliers.Suppliers": [],
+  "MyApp.view.suppliers.SuppliersController": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractManager": [],
@@ -3686,6 +3686,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MyApp.view.suppliers.Suppliers": [
     "widget.suppliers"
+  ],
+  "MyApp.view.suppliers.SuppliersController": [
+    "controller.suppliers"
   ]
 });
 Ext.setVersion("ext", "5.0.0.970");

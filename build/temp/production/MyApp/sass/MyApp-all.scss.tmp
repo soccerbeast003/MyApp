@@ -713,7 +713,7 @@ $include-myapp-controller-main: false;
 $include-myapp-controller-root: true;
 $include-myapp-store-details: false;
 $include-myapp-store-simpsonsstore: false;
-$include-myapp-store-suppliers: false;
+$include-myapp-store-suppliers: true;
 $include-myapp-view-grid-details: false;
 $include-myapp-view-grid-simpsonsgrid: false;
 $include-myapp-view-home-home: false;
@@ -721,8 +721,9 @@ $include-myapp-view-main-main: true;
 $include-myapp-view-main-maincontroller: true;
 $include-myapp-view-main-mainmodel: true;
 $include-myapp-view-sidebar-sidebar: true;
-$include-myapp-view-sidebar-sidebarcontroller: false;
-$include-myapp-view-suppliers-suppliers: false;
+$include-myapp-view-sidebar-sidebarcontroller: true;
+$include-myapp-view-suppliers-suppliers: true;
+$include-myapp-view-suppliers-supplierscontroller: true;
 /* including package ext-theme-base */
 @import '../../../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */

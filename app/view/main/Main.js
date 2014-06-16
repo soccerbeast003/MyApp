@@ -44,6 +44,9 @@ Ext.define('MyApp.view.main.Main', {
 
             },
             {
+                xtype: 'sidebar'
+            },
+            {
                 region: 'south',
 
                 xtype: 'panel',

@@ -5,7 +5,7 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('MyApp.view.sidebar.SidebarController', {
+Ext.define('MyApp.view.suppliers.SuppliersController', {
     extend: 'Ext.app.ViewController',
 
     requires: [

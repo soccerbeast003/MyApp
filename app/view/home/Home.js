@@ -6,37 +6,41 @@
  * TODO - Replace this content of this view to suite the needs of your application.
  */
 Ext.define('MyApp.view.home.Home', {
-    extend: 'Ext.layout.container.Table',
+    extend: 'Ext.Panel',
     requires: [
 
     ],
 
-    alias: 'widget.home',
-    controller: 'home',
-//    region: 'center',
+    width: 500,
+    height: 300,
+    title: "HBoxLayout Panel",
     layout: {
-        type: 'table',
-        columns: 4
+        type: 'hbox',
+        align: 'stretch'
     },
-//    split: true,
-//    closable: true,
-//    title: 'Details',
-    //    viewModel: {
-//        type: 'east'
-//    },
+    items: [{
+        layout:{
+            type: 'vbox'
+        },
+        items: [{
 
+            xtype: 'panel',
+            title: 'Inner Panel One',
+            flex: 1
+        }]
+    },{
+        xtype: 'panel',
+        title: 'Inner Panel Two',
+        flex: 1
+    },{
+        xtype: 'panel',
+        title: 'Inner Panel Three',
+        flex: 1
+    }],
+    alias: 'widget.home',
+//    controller: 'home',
     initComponent: function () {
 
-//        this.items = [
-//            {
-//                xtype: 'container',
-//                region: 'east',
-//                width: 300,
-//                height: 200,
-//                split: true
-//
-//            }
-//        ];
         this.callParent();
     }
 });
