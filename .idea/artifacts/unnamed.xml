@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="MyApp" />
+          <element id="module-output" name="CartCatalogs" />
         </element>
       </element>
     </root>

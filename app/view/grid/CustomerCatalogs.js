@@ -19,8 +19,9 @@ Ext.define('MyApp.view.grid.CustomerCatalogs', {
 //        type: 'center'
 //    },
 
-    height: 200,
-    width: 400,
+    height: '100%',
+    width: '100%',
+    margin: '0 10 5 0',
 
     initComponent: function () {
 

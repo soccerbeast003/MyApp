@@ -2323,14 +2323,14 @@ Ext.ClassManager.addNameAlternateMappings({
   "MyApp.view.grid.Details": [],
   "MyApp.view.grid.ProductTypes": [],
   "MyApp.view.grid.SimpsonsGrid": [],
+  "MyApp.view.grid.suppliers.Suppliers": [],
+  "MyApp.view.grid.suppliers.SuppliersController": [],
   "MyApp.view.home.Home": [],
   "MyApp.view.main.Main": [],
   "MyApp.view.main.MainController": [],
   "MyApp.view.main.MainModel": [],
   "MyApp.view.sidebar.Sidebar": [],
-  "MyApp.view.sidebar.SidebarController": [],
-  "MyApp.view.suppliers.Suppliers": [],
-  "MyApp.view.suppliers.SuppliersController": []
+  "MyApp.view.sidebar.SidebarController": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractManager": [],
@@ -3678,6 +3678,12 @@ Ext.ClassManager.addNameAliasMappings({
   "MyApp.view.grid.SimpsonsGrid": [
     "widget.simpsons"
   ],
+  "MyApp.view.grid.suppliers.Suppliers": [
+    "widget.suppliers"
+  ],
+  "MyApp.view.grid.suppliers.SuppliersController": [
+    "controller.suppliers"
+  ],
   "MyApp.view.home.Home": [
     "widget.home"
   ],
@@ -3695,12 +3701,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MyApp.view.sidebar.SidebarController": [
     "controller.sidebar"
-  ],
-  "MyApp.view.suppliers.Suppliers": [
-    "widget.suppliers"
-  ],
-  "MyApp.view.suppliers.SuppliersController": [
-    "controller.suppliers"
   ]
 });
 Ext.setVersion("ext", "5.0.0.970");

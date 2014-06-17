@@ -5,7 +5,7 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('MyApp.view.suppliers.Suppliers', {
+Ext.define('MyApp.view.grid.suppliers.Suppliers', {
     extend: 'Ext.grid.Panel',
     requires: [
         'Ext.grid.plugin.RowEditing',
@@ -20,9 +20,8 @@ Ext.define('MyApp.view.suppliers.Suppliers', {
 //        type: 'center'
 //    },
 
-    title: 'Suppliers Grid',
-    height: 200,
-    width: 400,
+    height: '100%',
+    width: '100%',
 
     initComponent: function () {
 

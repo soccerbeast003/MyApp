@@ -19,8 +19,8 @@ Ext.define('MyApp.view.grid.ProductTypes', {
 //        type: 'center'
 //    },
 
-    height: 200,
-    width: 400,
+    height: '100%',
+    width: '100%',
 
     initComponent: function () {
 

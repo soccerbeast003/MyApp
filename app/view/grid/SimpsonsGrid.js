@@ -21,8 +21,8 @@ Ext.define('MyApp.view.grid.SimpsonsGrid', {
 //    },
 
     title: 'Simpsons Grid',
-    height: 200,
-    width: 400,
+    height: '100%',
+    width: '100%',
 
     initComponent: function () {
 

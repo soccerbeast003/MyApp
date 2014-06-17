@@ -26,6 +26,50 @@ Ext.define('MyApp.view.sidebar.SidebarController', {
     },
     onEdit: function () {
         this.fireEvent('editEvent');
+    },
+
+    init: function () {
+        this.listen({
+            controller: {
+                'suppliers': {
+                    editEvent: this.addGrid
+                }
+            }
+//            component: {
+//                'simpsons': {
+//                    editEvent: me.addGrid
+//                }
+//            }
+        });
+
+    },
+
+    addGrid: function () {
+        var suppliersGrid = this.lookupReference('suppliersGrid'),
+            mainPanel = this.getView().up('main'),
+            eastPanel = mainPanel.down('#stupidsteve');
+        if (eastPanel) {
+            eastPanel.destroy();
+        }
+
+        mainPanel.insert(0, Ext.create({
+
+            xtype: 'panel',
+            width: 300,
+            itemId: 'stupidsteve',
+            region: 'east',
+            title: 'Details',
+            split: true,
+            closable: true,
+            items: [
+                {
+                    xtype: 'suppliers'
+                }
+            ]
+
+        }));
+
     }
+
 
 });

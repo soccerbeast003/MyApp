@@ -30,19 +30,27 @@ Ext.define('MyApp.view.main.Main', {
 
     initComponent: function () {
         this.items = [
+
             {
                 region: 'north',
 
                 xtype: 'panel',
+                bodyStyle: {
+                   backgroundColor: '#222222'
+                },
                 items: [
                     {
                         xtype: 'image',
-                        src: 'resources/images/headerimage.jpg'
+                        src: 'resources/images/headerimage.jpg',
+                        height: 100
                     }
                 ],
                 height: 100
 
             },
+
+
+
             {
                 xtype: 'sidebar'
             },
@@ -50,12 +58,10 @@ Ext.define('MyApp.view.main.Main', {
                 region: 'south',
 
                 xtype: 'panel',
-                items: [
-                    {
-                        xtype: 'image',
-                        src: 'resources/images/headerimage.jpg'
-                    }
-                ],
+                bodyStyle: {
+                    backgroundColor: '#222222'
+                },
+
                 height: 50
 
             }

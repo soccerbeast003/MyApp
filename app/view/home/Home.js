@@ -11,8 +11,6 @@ Ext.define('MyApp.view.home.Home', {
 
     ],
     alias: 'widget.home',
-    width: 500,
-    height: 300,
     title: "HBoxLayout Panel",
     layout: {
         type: 'hbox',
@@ -27,7 +25,7 @@ Ext.define('MyApp.view.home.Home', {
             },
             items: [
                 {
-                    width: 675,
+//                    width: 675,
                     xtype: 'customerCatalogs',
                     title: 'Current Catalogs',
                     flex: 1
@@ -43,13 +41,13 @@ Ext.define('MyApp.view.home.Home', {
             },
             items: [
                 {
-                    width: 700,
+//                    width: 700,
                     xtype: 'simpsons',
                     title: 'Recently Modified Catalogs',
                     flex: 1
                 },
                 {
-                    width: 700,
+//                    width: 700,
                     xtype: 'suppliers',
                     title: 'Recently Added Catalogs',
                     flex: 1

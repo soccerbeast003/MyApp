@@ -720,14 +720,14 @@ $include-myapp-view-grid-customercatalogs: true;
 $include-myapp-view-grid-details: true;
 $include-myapp-view-grid-producttypes: true;
 $include-myapp-view-grid-simpsonsgrid: true;
+$include-myapp-view-grid-suppliers-suppliers: true;
+$include-myapp-view-grid-suppliers-supplierscontroller: true;
 $include-myapp-view-home-home: true;
 $include-myapp-view-main-main: true;
 $include-myapp-view-main-maincontroller: true;
 $include-myapp-view-main-mainmodel: true;
 $include-myapp-view-sidebar-sidebar: true;
 $include-myapp-view-sidebar-sidebarcontroller: true;
-$include-myapp-view-suppliers-suppliers: true;
-$include-myapp-view-suppliers-supplierscontroller: true;
 /* including package ext-theme-base */
 @import '../../../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */
