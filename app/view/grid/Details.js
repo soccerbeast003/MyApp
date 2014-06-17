@@ -40,7 +40,7 @@ Ext.define('MyApp.view.grid.Details', {
             {
                 header: 'Product Id',
                 dataIndex: 'productid',
-                flex: 1,
+                width: 100,
                 editor: {
                     allowBlank: false,
                     vtype: 'email'

@@ -56,7 +56,7 @@ Ext.define('MyApp.view.main.Main', {
                         src: 'resources/images/headerimage.jpg'
                     }
                 ],
-                height: 100
+                height: 50
 
             }
         ];

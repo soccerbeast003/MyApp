@@ -10,7 +10,7 @@ Ext.define('MyApp.view.home.Home', {
     requires: [
 
     ],
-
+    alias: 'widget.home',
     width: 500,
     height: 300,
     title: "HBoxLayout Panel",
@@ -18,27 +18,48 @@ Ext.define('MyApp.view.home.Home', {
         type: 'hbox',
         align: 'stretch'
     },
-    items: [{
-        layout:{
-            type: 'vbox'
-        },
-        items: [{
+    items: [
 
-            xtype: 'panel',
-            title: 'Inner Panel One',
-            flex: 1
-        }]
-    },{
-        xtype: 'panel',
-        title: 'Inner Panel Two',
-        flex: 1
-    },{
-        xtype: 'panel',
-        title: 'Inner Panel Three',
-        flex: 1
-    }],
-    alias: 'widget.home',
+        {
+            flex: 1,
+            layout: {
+                type: 'vbox'
+            },
+            items: [
+                {
+                    width: 675,
+                    xtype: 'customerCatalogs',
+                    title: 'Current Catalogs',
+                    flex: 1
+                }
+            ]
+
+        },
+
+        {
+            flex: 1,
+            layout: {
+                type: 'vbox'
+            },
+            items: [
+                {
+                    width: 700,
+                    xtype: 'simpsons',
+                    title: 'Recently Modified Catalogs',
+                    flex: 1
+                },
+                {
+                    width: 700,
+                    xtype: 'suppliers',
+                    title: 'Recently Added Catalogs',
+                    flex: 1
+                }
+            ]
+        }
+    ],
+
 //    controller: 'home',
+
     initComponent: function () {
 
         this.callParent();

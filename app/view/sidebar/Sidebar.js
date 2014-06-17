@@ -41,7 +41,8 @@ Ext.define('MyApp.view.sidebar.Sidebar', {
             xtype: 'suppliers'
         },
         {
-            title: 'Product Types'
+            title: 'Product Types',
+            xtype: 'productTypes'
         },
         {
             title: 'About'
