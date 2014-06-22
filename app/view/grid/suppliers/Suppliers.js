@@ -25,6 +25,8 @@ Ext.define('MyApp.view.grid.suppliers.Suppliers', {
 
     initComponent: function () {
 
+        //test comment
+
         var rowEditing = Ext.create('Ext.grid.plugin.RowEditing', {
             clicksToMoveEditor: 1,
             autoCancel: false,
